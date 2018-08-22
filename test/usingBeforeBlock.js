@@ -3,7 +3,7 @@ var chai = require('chai');
 var res, users, actualEmail;
 
 before(function(done) {
-	request("https://jsonplaceholder.typicode.com/users", (error, response, body) => {
+    request("https://jsonplaceholder.typicode.com/users", (error, response, body) => {
     res = response;
     users = JSON.parse(response.body);
     done();
