@@ -3,7 +3,7 @@ var chai = require('chai');
 var res, users, actualEmail;
 
 before(function(done) {
-	var options = {
+  var options = {
     method: 'GET',
     uri: 'https://jsonplaceholder.typicode.com/users',
     resolveWithFullResponse: true
@@ -34,5 +34,4 @@ describe('Testing jsonplaceholder', () => {
     chai.expect(actualEmail).to.equal(expectedEmail);
     done();
   });
-
 });
